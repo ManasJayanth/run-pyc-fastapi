@@ -1,0 +1,13 @@
+* Instructions
+
+#+begin_src sh
+docker build . -t foo
+docker run --name foo-c foo
+#+end_src
+
+To check that no =*.py= file is present in the container
+
+#+begin_src sh
+docker exec -it foo-c bash
+#+end_src
+
